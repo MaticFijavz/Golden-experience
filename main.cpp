@@ -1,3 +1,5 @@
+#define "vec3.h"
+
 #include <cstdint>
 #include <iostream>
 #include <fstream>
@@ -8,8 +10,8 @@ int main() {
 
     // Image
 
-    uint16_t image_width = 256;
-    uint16_t image_height = 256;
+    uint16_t image_width = 1024;
+    uint16_t image_height = 1024;
 
 
     // Create output directory if it doesn't exist
@@ -34,19 +36,17 @@ int main() {
     img << "P3\n" << image_width << ' ' << image_height << "\n255\n";
 
     for (uint16_t j = 0; j < image_height; j++) {
+        printf("\rScanLines remaining: %d ", image_height - j);
         for (uint16_t i = 0; i < image_width; i++) {
-            auto r = double(i) / 255;
-            auto g = double(j) / 255;
-            auto b = i * j  / 255;
-
-            auto ir = uint16_t(255.999 * r);
-            auto ig = uint16_t(255.999 * g);
-            auto ib = uint16_t(b);
-
-            img << ir << ' ' << ig << ' ' << ib << '\n';
+            auto r = uint16_t(255.999 * (double(i) / (image_width - 1)));
+            auto g = uint16_t(255.999 * (double(j) / (image_height - 1)));
+            auto b = uint16_t(255.999 * (double(i * j) / ((image_height * image_width) - (i + j))));
+            img << r << ' ' << g << ' ' << b << '\n';
         }
     }
-
+    printf("\rDone                        \n");
+    printf("\n");
+    printf(filename.c_str());
     // Close file
     img.close();
     return 0;
