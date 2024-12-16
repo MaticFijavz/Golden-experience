@@ -4,4 +4,5 @@ project(Golden_Experience)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(Golden_Experience main.cpp
-        vec3.h)
+        vec3.h
+        color.h)

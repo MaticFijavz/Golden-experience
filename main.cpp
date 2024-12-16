@@ -1,4 +1,5 @@
-#define "vec3.h"
+#include  "vec3.h"
+#include  "color.h"
 
 #include <cstdint>
 #include <iostream>
@@ -38,10 +39,9 @@ int main() {
     for (uint16_t j = 0; j < image_height; j++) {
         printf("\rScanLines remaining: %d ", image_height - j);
         for (uint16_t i = 0; i < image_width; i++) {
-            auto r = uint16_t(255.999 * (double(i) / (image_width - 1)));
-            auto g = uint16_t(255.999 * (double(j) / (image_height - 1)));
-            auto b = uint16_t(255.999 * (double(i * j) / ((image_height * image_width) - (i + j))));
-            img << r << ' ' << g << ' ' << b << '\n';
+
+            auto pixel_color = color(double(i)/(image_width-1), double(j)/(image_height-1), 0);
+            write_color(img, pixel_color);
         }
     }
     printf("\rDone                        \n");
