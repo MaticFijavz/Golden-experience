@@ -1,30 +1,54 @@
 #include <cstdint>
 #include <iostream>
+#include <fstream>
+#include <filesystem>
+#include <string>
 
-int main(){
+int main() {
 
-    //image
-    uint8_t image_width = 512;
-    uint8_t image_hieght = 512;
+    // Image
 
-    //render
-    std::cout << "P3\n" << image_width << " " << image_hieght << "\n255\n";
+    uint16_t image_width = 256;
+    uint16_t image_height = 256;
 
-    for (uint8_t  i = 1; i < image_hieght; i++){
-        for (uint8_t j = 1; j < image_width; j++){
-            auto r = double(i) / (image_hieght - 1);
-            auto g = double(j) / (image_width - 1);
-            auto b = 0.0;
 
-            auto ir = uint8_t(255.999 * r);
-            auto ig = uint8_t(255.999 * g);
-            auto ib = uint8_t(255.999 * b);
+    // Create output directory if it doesn't exist
+    std::filesystem::create_directory("output");
 
-            std::cout << ir << " " << ig << " " << ib << '\n';
+    // Generate unique filename
+    std::string filename;
+    int file_index = 0;
+    do {
+        filename = "output/output" + std::to_string(file_index++) + ".ppm";
+    } while (std::filesystem::exists(filename));
+
+    // Open file
+    std::ofstream img(filename);
+    if (!img) {
+        std::cerr << "Could not open the file for writing.\n";
+        return 1;
+    }
+
+    // Render
+
+    img << "P3\n" << image_width << ' ' << image_height << "\n255\n";
+
+    for (uint16_t j = 0; j < image_height; j++) {
+        for (uint16_t i = 0; i < image_width; i++) {
+            auto r = double(i) / 255;
+            auto g = double(j) / 255;
+            auto b = i * j  / 255;
+
+            auto ir = uint16_t(255.999 * r);
+            auto ig = uint16_t(255.999 * g);
+            auto ib = uint16_t(b);
+
+            img << ir << ' ' << ig << ' ' << ib << '\n';
         }
     }
 
-
-
+    // Close file
+    img.close();
+    return 0;
 
 }
