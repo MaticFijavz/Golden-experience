@@ -9,6 +9,8 @@ download the zip [code](https://github.com/MaticFijavz/Golden-experience/archive
 ## Current usage
 currently only outputs a .ppm image file to a seperate folder called output and indexes them  in order if you like that, dunno.
 
+![output23](https://github.com/user-attachments/assets/dc3ccece-81c7-4b74-898b-684efe0f7e8d)
+
 ## Why
 
 tryna impress Resi
