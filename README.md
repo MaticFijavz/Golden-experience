@@ -8,8 +8,10 @@ download the zip [code](https://github.com/MaticFijavz/Golden-experience/archive
 
 ## Current usage
 currently only outputs a .ppm image file to a seperate folder called output and indexes them  in order if you like that, dunno.
+Outputs a background and a sphere whose color is it surface normals. P hard
 
-![output23](https://github.com/user-attachments/assets/dc3ccece-81c7-4b74-898b-684efe0f7e8d)
+![{23DADF99-861A-4FFD-A135-15700486C649}](https://github.com/user-attachments/assets/d8459bcf-5105-4a84-9e9d-eb37a878b00e)
+
 
 ## Why
 
