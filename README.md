@@ -23,9 +23,9 @@ The current roadmap as of editing:\
 [x] make a vector (vec3.h) class\
 [x] make a colors (colors.h) class\
 [x] make a rays (rays.h) class\
-[ ] A simple camera\
-[ ] A background\
-[ ] Adding a Sphere\
+[x] A simple camera\
+[x] A background\
+[x] Adding a Sphere\
 [ ] Surface Normals and Multiple Objects\
 [ ] Moving Camera Code Into Its Own Class\
 [ ] Antialiasing\
