@@ -10,7 +10,8 @@ download the zip [code](https://github.com/MaticFijavz/Golden-experience/archive
 currently only outputs a .ppm image file to a seperate folder called output and indexes them  in order if you like that, dunno.
 Outputs a background and a sphere whose color is it surface normals. P hard
 
-![{23DADF99-861A-4FFD-A135-15700486C649}](https://github.com/user-attachments/assets/d8459bcf-5105-4a84-9e9d-eb37a878b00e)
+
+![output8](https://github.com/user-attachments/assets/43ae383f-1ee4-48ec-a006-3a1a0672ef43)
 
 
 ## Why
@@ -23,9 +24,9 @@ The current roadmap as of editing:\
 [x] make a vector (vec3.h) class\
 [x] make a colors (colors.h) class\
 [x] make a rays (rays.h) class\
-[ ] A simple camera\
-[ ] A background\
-[ ] Adding a Sphere\
+[x] A simple camera\
+[x] A background\
+[x] Adding a Sphere\
 [ ] Surface Normals and Multiple Objects\
 [ ] Moving Camera Code Into Its Own Class\
 [ ] Antialiasing\
