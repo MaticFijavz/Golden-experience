@@ -27,8 +27,8 @@ The current roadmap as of editing:\
 [x] A simple camera\
 [x] A background\
 [x] Adding a Sphere\
-[ ] Surface Normals and Multiple Objects\
-[ ] Moving Camera Code Into Its Own Class\
+[x] Surface Normals and Multiple Objects\
+[x] Moving Camera Code Into Its Own Class\
 [ ] Antialiasing\
 [ ] Diffuse materials\
 [ ] Dielectric materials\
