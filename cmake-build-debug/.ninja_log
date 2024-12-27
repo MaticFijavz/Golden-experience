@@ -1,5 +1,6 @@
 # ninja log v6
-15	1191	7565165467352269	CMakeFiles/Golden_Experience.dir/main.cpp.obj	e8b9389819432662
-1191	1378	7565165479106566	Golden_Experience.exe	2f38f850eeccca87
 3	888	7570143936660992	CMakeFiles/Golden_Experience.dir/main.cpp.obj	e8b9389819432662
 889	1085	7570143945521564	Golden_Experience.exe	2f38f850eeccca87
+1	207	7570154734688427	build.ninja	a4c63f232bdebfd9
+9	738	7570154735098940	CMakeFiles/Golden_Experience.dir/main.cc.obj	a9c718a1588abddf
+738	844	7570154742393460	Golden_Experience.exe	22a0ad8e0b821d10

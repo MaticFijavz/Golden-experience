@@ -26,6 +26,7 @@ inline double degrees_to_radians(double degrees) {
 
 #include "vec3.h"
 #include "ray.h"
+#include "interval.h"
 #include "color.h"
 
 #endif //GEFUNCTIONS_H

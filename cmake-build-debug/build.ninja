@@ -49,8 +49,8 @@ cmake_ninja_workdir = D$:/RiderProjects/GoldenExperience/cmake-build-debug/
 
 build cmake_object_order_depends_target_Golden_Experience: phony || .
 
-build CMakeFiles/Golden_Experience.dir/main.cpp.obj: CXX_COMPILER__Golden_Experience_unscanned_Debug D$:/RiderProjects/GoldenExperience/main.cpp || cmake_object_order_depends_target_Golden_Experience
-  DEP_FILE = CMakeFiles\Golden_Experience.dir\main.cpp.obj.d
+build CMakeFiles/Golden_Experience.dir/main.cc.obj: CXX_COMPILER__Golden_Experience_unscanned_Debug D$:/RiderProjects/GoldenExperience/main.cc || cmake_object_order_depends_target_Golden_Experience
+  DEP_FILE = CMakeFiles\Golden_Experience.dir\main.cc.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Golden_Experience.dir
   OBJECT_FILE_DIR = CMakeFiles\Golden_Experience.dir
@@ -63,7 +63,7 @@ build CMakeFiles/Golden_Experience.dir/main.cpp.obj: CXX_COMPILER__Golden_Experi
 #############################################
 # Link the executable Golden_Experience.exe
 
-build Golden_Experience.exe: CXX_EXECUTABLE_LINKER__Golden_Experience_Debug CMakeFiles/Golden_Experience.dir/main.cpp.obj
+build Golden_Experience.exe: CXX_EXECUTABLE_LINKER__Golden_Experience_Debug CMakeFiles/Golden_Experience.dir/main.cc.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Golden_Experience.dir

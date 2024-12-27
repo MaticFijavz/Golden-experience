@@ -3,11 +3,12 @@ project(Golden_Experience)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Golden_Experience main.cpp
+add_executable(Golden_Experience main.cc
         vec3.h
         color.h
         ray.h
         hittable.h
         sphere.h
         hittable_list.h
-        GEfunctions.h)
+        GEfunctions.h
+        interval.h)
