@@ -9,4 +9,5 @@ add_executable(Golden_Experience main.cpp
         ray.h
         hittable.h
         sphere.h
-        hittable_list.h)
+        hittable_list.h
+        GEfunctions.h)
