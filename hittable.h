@@ -1,7 +1,13 @@
 #ifndef HITTABLE_H
 #define HITTABLE_H
 
-#include "ray.h"
+#include <cstdint>
+#include <fstream>
+#include <filesystem>
+#include <string>
+#include <iostream>
+
+
 
 class hit_record {
 public:
