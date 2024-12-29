@@ -8,7 +8,7 @@ class camera {
     public:
     double aspect_ratio     {1.0};  //Ratio of image width over height
     int    image_width      {400};  //Rendered image width in pixel count
-    int    samples_per_pixel    {100};  //Count of random samples per pixel
+    int    samples_per_pixel    {1000};  //Count of random samples per pixel
 
     void render(const hittable& world) {
         initialize();
@@ -88,7 +88,8 @@ private:
         hit_record rec;
 
         if (world.hit(r, interval(0, infinity), rec)) {
-            return 0.5 * (rec.normal + color(1,1,1));
+            vec3 direction = random_on_hemisphere(rec.normal);
+            return 0.5 * ray_color(ray(rec.p, direction), world);
         }
 
         vec3 unit_direction = unit_vector(r.direction());
