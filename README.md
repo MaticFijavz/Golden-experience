@@ -8,9 +8,9 @@ download the zip [code](https://github.com/MaticFijavz/Golden-experience/archive
 
 ## Current usage
 currently only outputs a .ppm image file to a seperate folder called output and indexes them  in order if you like that, dunno.
-Outputs a background and a sphere whose color is it surface normals. P hard
+Outputs a background, a world and 3 spheres with different materials*. P hard
 
-![{6C680C7A-270D-403C-A49A-5394BBBCFCF5}](https://github.com/user-attachments/assets/82046a1a-e78c-4c73-9503-0e44d7bab219)
+![{913435FA-29B0-48D9-955F-E8ACA36C4995}](https://github.com/user-attachments/assets/79d632e0-a2c1-4ad4-99ac-60dd726ff578)
 
 
 
