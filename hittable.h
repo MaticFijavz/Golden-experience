@@ -4,9 +4,10 @@
 #include <cstdint>
 #include <fstream>
 #include <filesystem>
-#include "material.h"
 #include <string>
 #include <iostream>
+
+class material;
 
 class hit_record {
 public:
