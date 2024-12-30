@@ -7,8 +7,6 @@
 #include <string>
 #include <iostream>
 
-
-
 class hit_record {
 public:
     point3 p;

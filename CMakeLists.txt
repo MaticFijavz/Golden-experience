@@ -12,4 +12,5 @@ add_executable(Golden_Experience main.cc
         sphere.h
         hittable_list.h
         interval.h
-        camera.h)
+        camera.h
+        material.h)
